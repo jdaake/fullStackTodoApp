@@ -1,0 +1,12 @@
+<div class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="navbar-nav">
+    <a class="nav-link nav-item" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+    <a class="nav-item nav-link" [routerLink]="['/todos']" routerLinkActive="router-link-active">Todos</a>
+    <a class="nav-link nav-item" [routerLink]="['users/login']"
+      routerLinkActive="router-link-active">Login</a>
+    <a class="nav-item nav-link" [routerLink]="['users/signup']"
+      routerLinkActive="router-link-active">Sign Up</a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

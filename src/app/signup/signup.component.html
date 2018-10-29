@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="col-10">
+    <div class="signUpBox col-8 align-items-center">
+      <p>Set your username and password</p>
+      <div class="username">
+        <mat-form-field>
+          <input matInput type="text" placeholder="Username" [(ngModel)]="username">
+        </mat-form-field>
+      </div>
+      <div class="password">
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+        </mat-form-field>
+      </div>
+      <div class="confirmPassword">
+        <mat-form-field>
+          <input matInput type="password" placeholder="Confirm Password"
+            [(ngModel)]="confirmPassword">
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-stroked-button (click)="signUp(username, password)">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

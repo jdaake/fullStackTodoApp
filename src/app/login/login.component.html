@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="col-10 align-content-between">
+    <div class="loginBox col-8 align-items-center">
+      <div class="username">
+        <mat-form-field>
+          <input matInput type="text" placeholder="Username" [(ngModel)]="username">
+        </mat-form-field>
+      </div>
+      <div class="password">
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-stroked-button (click)="loginSubmit(username, password)">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
